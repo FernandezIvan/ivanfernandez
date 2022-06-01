@@ -1,0 +1,36 @@
+.grid-container{
+    /* declaramos que es una grilla */
+    display: grid;
+/* definir las filas y la cantidad */
+grid-template-rows: 150px 150px 150px;
+/* definir las columnas y la cantidad */
+grid-template-columns:repeat(3, 1fr);
+/* una unidad de medida que nos permite distribuir los espacios de manera fraccionada */
+/* podemos usar un funcionamiento para repetir automaticamente las medidas */
+border: 2px solid black;
+
+/* especie de margin interno en una grilla */
+gap: 10px;
+
+
+}
+
+.grid-item{
+    border:  1px solid black;
+    
+}
+
+.imagen{
+width: 100%;
+height: 100%;
+grid-column: 1/3;
+}
+
+/* desde que lineas a que linea quiero que vaya este elemento */
+
+
+/* filas */
+/*  */
+.item-dos{
+    grid-column: 1,3;
+}
