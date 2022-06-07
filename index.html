@@ -12,7 +12,7 @@
 </head>
 <body>
     <Header>
-        <section class="cabezera-index">
+        <section class="cabezera">
             <div class="logo-principal" >
              <img src="iconos/logo.png" alt="Logo representativo del lugar">
              </div>
@@ -145,17 +145,23 @@
         </section>
                  <Section class="mapa">
                    <!-- Hubicacion del lugar  -->
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56193.01636257491!2d-64.513307!3d-31.037766999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ab390516e02b582!2sBalneario%20Los%20Quimbaletes!5e1!3m2!1ses-419!2sar!4v1652147133917!5m2!1ses-419!2sar" width="2000" height="450" style="border:25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+                   <div class="row">
+                     <div class="col-sm-12 col-md-10 col-lg-8">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56193.01636257491!2d-64.513307!3d-31.037766999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ab390516e02b582!2sBalneario%20Los%20Quimbaletes!5e1!3m2!1ses-419!2sar!4v1652147133917!5m2!1ses-419!2sar" width="2000" height="450" style="border:25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
                     <!-- Texto con las cordenadas del lugar -->
-                   <p class="cordenadas"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda quis soluta incidunt ab quaerat eum vitae eaque, minus illum nisi dicta animi at eius totam quasi architecto corporis ipsum?
+                    <div class="col-sm-12 col-md-2 col-lg-4 cordenadas">
+                   <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda quis soluta incidunt ab quaerat eum vitae eaque, minus illum nisi dicta animi at eius totam quasi architecto corporis ipsum?
                    </p>
+                   </div>
+                  </div>
                  </Section>
      </main>
         <footer>
-            <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-                  <div class="col contacto-izquierda">
+          <Section>
+            <div class="contacto">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-3 contacto-izquierda">
                        <!-- Logo de contacto -->
                     
                        <img  src="iconos/contacto.svg" alt="Logo de Contacto">  
@@ -164,26 +170,26 @@
                           <p class="numeros ">011-4661-7320</p> 
                   </div>
 
-                  <div class="col contacto-centro"> 
+                  <div class="col-sm-12 col-md-6 col-lg-3 contacto-centro"> 
                       <!-- logo de Instagram -->
                     <img src="iconos/instagram.svg" alt="Logo de instagram">
                     <!-- Nombre del instagram -->
                     <p class="contacto-instagram "> Complejo de Cabañas Los Quimbaletes</p>
                    </div>
 
-                  <div class="col contacto-centro"> <!-- Logo de WhatsApp -->
+                  <div class="col-sm-12 col-md-6 col-lg-3 contacto-centro"> <!-- Logo de WhatsApp -->
                     <img  src="iconos/whatsapp.svg" alt=> 
                     <!-- Numero de celular -->
                      <p class="numeros ">11-5315-5082 </p></div>
 
-
-                  <div class="col contacto-derecha">
+                  <div class="col-sm-12 col-md-6 col-lg-3 contacto-derecha">
                       <!-- logo de Facebook -->
                       <img src="iconos/facebook.svg" alt="Logo de facebook">
                       <!-- Nombre del instagram-->
                       <p class="contacto-facebook"> Complejo de Cabañas Los Quimbaletes</p> </div>
                 </div>
               </div>
+              </section>
             
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
