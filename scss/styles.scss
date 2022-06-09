@@ -1,0 +1,29 @@
+$color-principal:  #7CFC00;
+$titulo: #40E0D0;
+$medida-h1: 128px;
+
+
+
+
+
+header{ 
+    background-color: $color-principal;
+    border-radius: 25%;
+
+    .logo{
+        border-radius: 50%;
+        image-orientation: center;
+    }
+    h1{
+        color: $titulo;
+        font-size: $medida-h1 -80px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+}
+    
+    
+  
+   
