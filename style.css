@@ -4,7 +4,7 @@
 }
 
 
-.cabezera-index{
+.cabezera{
     display: flex;
     justify-items: center;
     background-color: blue;
@@ -25,11 +25,10 @@
 
 }
 
-.titulo-index:hover{
-   
+.titulo-index:hover{  
     animation: titulo-index 6s;
-
 }
+
 /* la idea es que haga solo un giro de 360 nada mas */
 @keyframes titulo-index{
     0%{
@@ -56,60 +55,34 @@
     }
 }
 
-.navegador{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    border: 2px solid red;
-    font-size: 32px;
-    margin: 3% 10%;
-    list-style: none;
-    text-decoration: underline;
-    flex-wrap: wrap;
-   
+@media screen and (max-width:576px){
+    .cabezera{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-principal{
+        display: flex;
+        flex-direction: column;
+       
+    }
 }
 
-
-a{
-    color: rgb(145, 104, 104);
-    text-decoration: solid;
+.nav-item{
+    background-color: gray;   
 }
 /* -------------------------------------------- */
 /* main */
-.fotos-index{
-    display: grid;
-    grid-template-rows:auto ;
-    grid-template-columns: repeat(3,1fr);
-    border: 4px solid gray;
+.fotos-index{ 
+   width: 50%;
+    margin-left: 25%;
     gap: 5px; 
 }
 
-
-.fotos-index-1{
-    width: 100%;
-    height: 100%;
-}
-.fotos-index-2{
-    width: 100%;
-    height: 100%;  
-}
-.fotos-index-3{
-    width: 100%;
-    height: 100%;
-}
-.fotos-index-1:hover{
-    transform: scale(2) translate(200px);
+.fotos-index:hover{  
+    transform: scale(2) translate(0px);
     transition: all 2s ;
 }
 
-.fotos-index-2:hover{
-    transform: scale(2);
-    transition: all 2s ;
-}
-.fotos-index-3:hover{
-    transform: scale(2) translate(-200px);
-    transition: all 2s ;
-}
 
 /* texto con introductorio */
 .intro{
@@ -118,15 +91,12 @@ a{
 }
 
 
-
 /* Texto con las cordenadas del lugar */
 .mapa{
     display: flex;
     justify-content: center;
     padding: 5% 0%;
 }
-
-
 
 
 .cordenadas{
@@ -139,56 +109,39 @@ a{
 /* --------------------------------------------- */
 /*      footer */
 
-ul{
+
+.contacto{
     border: 2px solid red;
 }
 
 
-.contactos{
-    display: flex;
-    justify-content: space-between;
-}
-.contacto-numero{
-    display: flex;
-    justify-items: left;
-    align-items: center;
+.contacto-centro:hover{
+    transform: scale(2) translate(0px);
+    transition: all 4s ;
 }
 
-.contacto-numero:hover{
+.contacto-izquierda:hover{
     transform: scale(2) translate(200px);
     transition: all 4s ;
-
 }
-.contacto-logo{
-    width: 15%;
+
+.contacto-derecha:hover{
+    transform: scale(2) translate(-200px);
+    transition: all 4s ;
 }
 
 .numeros{
+    text-align: center;
     background-color: black;
     color: white;
-    padding: 1% 5%;
     font-size: 32px;
 }
 
-.contacto-redsocial{
-    display: flex;
-    justify-content: right;
-    font-size: 8px;
-    align-items: center;
-    padding: 1%
-}
-
-.contacto-redsocial:hover{
-    transform: scale(2) translate(-200px);
-    transition: all 4s ;
-
-}
 .contacto-instagram{
     display: flex;
     justify-content: left;
     background-color: rgb(238, 88, 138);
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
 
 .contacto-facebook{
@@ -202,12 +155,6 @@ ul{
 /* pagina de fotos */
 
 /* titulo de fotos  */
-.cabezera-fotos{
-    display: flex;
-    justify-items: center;
-    background-color: rgb(189, 172, 172);
-    width: 100%;
-}
 
 
 .titulo-fotos{
@@ -221,44 +168,38 @@ ul{
 }
 
 
-.albun{
-    display: grid;
-    grid-template-rows: repeat(3,auto);
-    grid-template-columns: repeat(2,1fr);
-    border: 3px solid black;
-    background-color: rgb(209, 139, 139);
-    
-}
 
 
 .albun-titulo{
-    font-size: 3em;
-    grid-column: 1/3;
+    font-size: 3em; 
    text-align: center;
     flex-wrap: wrap;
 }
 
-
-
-.albun-fotos:hover{
-    width: 95%;
-    height: 95%;
-    border: 3px solid black;
-    margin-top: 2px;
-    transform: scale(1.5);
+.columna-izquierda:hover{
+    transform: scale(1.5) translate(300px);   
     transition: all 2s;
 }
 
+.columna-derecha:hover{
+    transform: scale(1.5) translate(-200px);
+    transition: all 2s;
+}
+
+.columna-central{
+    display: flex;
+    justify-content: center;
+}
+.columna-central:hover{
+    transform: scale(1.5);
+    transition: all 2s;
+}
 /* ---------------------------------------------- */
 /* pagina de servicios */
 
 
 /* titulo de servicios */
-.cabezera-servicios{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(84, 59, 224);     
- }
+
 
 
 .titulo-servicios{
@@ -270,45 +211,15 @@ ul{
     color:rgb(199, 193, 193);
 }
 
-.ol-servicios{
-    border: 4px solid red;
-}
-
-/* lista ordenada de servicios */
-.li-servicios{
-   display: flex;
-   justify-content: center;
-   margin: 2% 5%;
-    font-size: 3em;
-    background-color: grey;
-    text-decoration: underline;
-    
-    
-}
-
-
-/* desarollo de cada item de la lista ordenada de servicios */
-.p-servicios{
-    display: flex;
-    justify-content: center;
-    margin: 2% 10%;
-    background-color:rgb(148, 137, 212) ;  
-    font-size: 24px;
-}
 
 /* ----------------------------------------------- */
 /* pagina de videos */
 
 /* videos con css aplicado */
-.cabezera-videos{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(163, 219, 117);
-}
 
 
 .titulo-videos{
-    font-size:128px;
+    font-size:160px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -325,13 +236,7 @@ ul{
 
 /* ----------------------------------------------- */
 /* pagina de contactos */
-.cabezera-contactos{
-    display: flex;
-    justify-items: center;
-    background-color: rgb(144, 165, 204);
-    width: 100%;
-    
-}
+
 
 .titulo-contactos{
     display: flex;
@@ -349,18 +254,15 @@ ul{
    justify-content: space-around;
     align-items: center;
     border: 4px solid gray;
-    margin: 2%;
-    
+    margin: 2%;   
 }
-
 
 .iconos-contactos{
     display: flex;
     justify-content: space-between;
-    width: 25%;
-   
-   
+    width: 25%;  
 }
+
 .referencia-numeros{
     display: flex;
     justify-content:center ;
@@ -379,14 +281,13 @@ ul{
     color: white;
     font-size: 32px;
     align-items: center;
-    padding: 0% 5%
-
+    padding: 0% 5%;
 }
 
 .referencia-facebook{
     display: flex;
     justify-content:center ;
-    background-color: rgb(54, 116, 230);
+    background-color: blue;
     color: white;
     font-size: 32px;
     align-items: center;
@@ -398,41 +299,28 @@ ul{
 }
 
 .referencia-facebook:hover{
-    animation: botones 2s;
+    animation: botones 1s;
 }
 @keyframes botones {
-   
     25% {
         border-radius: 25%;
-
-
+        background-color: black;
     }
     50%{ 
         border-radius: 50%;
-
+        background-color: black;
     }
 
     75%{
         border-radius: 75%;
-
+        background-color: black;
     }
     
 }
-
-
-
-
-
-
-
-
 
 .footer-contactos{
    display: flex;
    justify-content: center;
    border: 4px solid gray;
    margin: 2%;
-  
-
-
 }
