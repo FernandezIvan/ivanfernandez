@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,12 +55,48 @@
               </div>
           </nav>
     </Header>
-    <Main>      
-        <section class="fotos-index">
-           <img class="fotos-index-1"src="imagenes/cabaña1j.jpg" alt="Imagen de cabaña">
-           <img class="fotos-index-2"src="imagenes/cabaña2e.jpg" alt="Imagen de cabaña">
-           <img class="fotos-index-3"src="imagenes/cabaña3b.jpg" alt="Imagen de cabaña">
-        </section>
+
+    
+    <Main>   
+       <section>
+        <div id="carousel-1" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="carousel-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner fotos-index">
+              <div class="carousel-item active ">
+                <img src="imagenes/cabaña1j.jpg" class="d-block w-100" alt="Foto cabaña">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Los Quimbaletes</h5>
+                </div>
+              </div>
+              <div class="carousel-item fotos-index">
+                <img src="imagenes/cabaña2e.jpg" class="d-block w-100" alt="Foto cabaña">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Los Quimbaletes</h5>
+                </div>
+              </div>
+              <div class="carousel-item fotos-index">
+                <img src="imagenes/cabaña3b.jpg" class="d-block w-100" alt="Foto cabaña">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Los Quimbaletes</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </section>
+          
+          
         <section class="intro">
               <!-- Texto introductorio al complejo -->   
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis nam eum, commodi possimus molestias assumenda at perferendis voluptates ad quasi cupiditate consequatur dicta autem mollitia qui rerum, earum saepe amet.
@@ -68,13 +105,45 @@
                  Accusantium cupiditate labore nulla facilis, dolor fugit illum, nostrum recusandae necessitatibus nihil sit magnam neque vel soluta nisi beatae consequatur corrupti eos quo ullam voluptatem deleniti a ipsam? Deleniti, quo.
                  Debitis ipsa maiores vitae recusandae labore est tempore rem odio harum natus aliquam reiciendis esse, fuga pariatur dolorem ea tempora? Ea ipsum, sunt veniam dicta obcaecati earum laborum magnam aperiam!ipsum dolor sit amet consectetur adipisicing elit. Id porro perspiciatis, non, facere eum nisi quidem nam tempore expedita odit facilis! Temporibus quo voluptates culpa voluptatibus at totam eligendi error.
         </Section>
-        <section class="fotos-index">
-            <img class="fotos-index-1"src="imagenes/cabaña1b.jpg" alt="Imagen de cabaña">
-            <img class="fotos-index-2" src="imagenes/mesa.jpg" alt="Imagen de interior">
-            <img class="fotos-index-3"src="imagenes/cabaña2c.jpg" alt="Imagen de cabaña">
+
+        
+        <Section>
+        <div id="carousel-2" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner fotos-index">
+            <div class="carousel-item active">
+              <img src="imagenes/cabaña2b.jpg" class="d-block w-100" alt="Foto cabaña">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Los Quimbaletes</h5>
+              </div>
+            </div>
+            <div class="carousel-item fotos-index">
+              <img src="imagenes/mesa.jpg" class="d-block w-100" alt="Foto Interior">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Los Quimbaletes</h5>
+              </div>
+            </div>
+            <div class="carousel-item fotos-index">
+              <img src="imagenes/cabaña2c.jpg" class="d-block w-100" alt="Foto cabaña">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Los Quimbaletes</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
         </section>
-    
-    
                  <Section class="mapa">
                    <!-- Hubicacion del lugar  -->
                    <div class="row">
@@ -96,11 +165,11 @@
                   <div class="col-sm-12 col-md-6 col-lg-3 contacto-izquierda">
                        <!-- Logo de contacto -->
                     
-                          <img class="contacto-logo" src="iconos/contacto.svg" alt="Logo de Contacto">  
+                       <img  src="iconos/contacto.svg" alt="Logo de Contacto">  
                    
-                         <!-- Numero de contacto -->
-                            <p class="numeros">011-4661-7320</p>         
-                    </li>
+                       <!-- Numero de contacto -->
+                          <p class="numeros ">011-4661-7320</p> 
+                  </div>
 
                   <div class="col-sm-12 col-md-6 col-lg-3 contacto-centro"> 
                       <!-- logo de Instagram -->
@@ -124,5 +193,6 @@
               </section>
             
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
