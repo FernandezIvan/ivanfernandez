@@ -1,0 +1,67 @@
+Header .cabezera {
+  background-color: #66bde6;
+  display: flex;
+  justify-items: center;
+  color: #258d19; }
+
+Header .titulo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 80px; }
+
+Header .logo-principal {
+  display: flex;
+  justify-items: center; }
+
+@media (max-width: 600px) {
+  Header .cabezera {
+    display: flex;
+    flex-direction: column; }
+  Header .logo-principal {
+    display: flex;
+    flex-direction: column; } }
+
+Main .carouseles {
+  display: flex;
+  margin-left: 25%; }
+
+Main .img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+Main .img-fluid:hover {
+  transform: scale(2) translate(200px);
+  transition: all 2s; }
+
+Main .intro {
+  margin: 50px;
+  font-size: 48px; }
+
+Main .cordenadas {
+  background-color: #f1e9e9;
+  display: flex;
+  align-items: center;
+  font-size: 16px; }
+
+Main .mapa {
+  display: flex;
+  justify-content: center;
+  padding: 5% 0%; }
+
+footer .container-redes {
+  border: 2px solid red; }
+
+footer .contacto-centro:hover {
+  transform: scale(2) translate(200px)-200px;
+  transition: all 4s; }
+
+footer .contacto-izquierda:hover {
+  transform: scale(2) translate(200px);
+  transition: all 4s; }
+
+footer .contacto-derecha:hover {
+  transform: scale(2) translate(200px)-400px;
+  transition: all 4s; }
