@@ -1,0 +1,48 @@
+@import"../base/extends";
+@import"../base/mixins";
+@import"../base/lista";
+
+
+footer{
+    .container-redes{
+        border: 2px solid red;
+    }
+    
+    
+    .contacto-centro:hover{
+        @include aumento((2),0px, all 4s);
+    }
+    .contacto-izquierda:hover{
+        @include aumento((2),(200px), all 4s);
+    }
+    
+    .contacto-derecha:hover{
+        @include aumento((2),(-200px), all 2s);
+ }
+}
+
+.numeros{
+    text-align: center;
+    background-color: nth($colores,5);
+    color:nth($colores,6);
+    font-size: nth($fuentes,3)    
+}
+
+.contacto-instagram{
+    @extend%centrado-con;
+    background-color:nth($colores,4);
+    font-size: nth($fuentes,2)    
+}
+
+.contacto-facebook{
+    @extend%centrado-con;
+    background-color:nth($colores,3);
+    font-size: nth($fuentes,2)    
+}
+
+
+.footer-contactos{
+    @extend%centrado-con;
+    border: 4px solid gray;
+    margin: 2%;
+ }

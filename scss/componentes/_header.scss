@@ -1,0 +1,60 @@
+@import"../base/lista";
+@import"../base/extends";
+@import"../base/mixins";
+
+.cabezera{
+    background-color:nth($colores,2);
+    @extend %centrado-item;
+    color:nth($colores, 3 )
+    }
+    .titulo {
+     @extend %centrado-con;
+     width: 100%;
+     align-items: center;
+     flex-wrap: wrap; 
+     font-size:nth($fuentes,3) +16px;
+    }
+    .logo-principal{
+        @extend %centrado-item;
+    }
+    .titulo-index:hover{
+   
+        animation: titulo-index 6s;
+    }
+    @keyframes titulo-index{
+        0%{
+           @include animacion((0deg), 2s);
+        }
+        25%{
+            @include animacion((90deg), 2s);
+        }
+    
+        50%{
+            @include animacion((180deg), 2s);     
+        }
+    
+        75%{
+            @include animacion((360deg), 2s);     
+        }   
+        100%{
+            @include animacion((0deg),2s);   
+        }
+    }
+    
+
+
+    @media(max-width: 600px){
+        .cabezera{
+            display: flex;
+            flex-direction: column;
+            font-size: nth($fuentes,1)-4px;
+    
+        }
+        .logo-principal{
+            display: flex;
+            flex-direction: column;
+           
+        }
+        
+}
+
