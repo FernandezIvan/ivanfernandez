@@ -2,11 +2,11 @@
   display: flex;
   justify-items: center; }
 
-.titulo, Main .mapa, .columna-central, .video, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+.titulo, .mapa, .columna-central, .video, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
   display: flex;
   justify-content: center; }
 
-Main .cordenadas {
+.cordenadas {
   display: flex;
   align-items: center; }
 
@@ -43,21 +43,22 @@ Main .cordenadas {
 @media (max-width: 600px) {
   .cabezera {
     display: flex;
-    flex-direction: column;
-    font-size: 4px; }
+    flex-direction: column; }
   .logo-principal {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  H1 {
+    font-size: 8px; } }
 
 .cabezera, .logo-principal, .li-servicios, .p-servicios {
   display: flex;
   justify-items: center; }
 
-.titulo, Main .mapa, .columna-central, .video, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+.titulo, .mapa, .columna-central, .video, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
   display: flex;
   justify-content: center; }
 
-Main .cordenadas {
+.cordenadas {
   display: flex;
   align-items: center; }
 
@@ -65,23 +66,20 @@ Main .carouseles {
   display: flex;
   margin-left: 25%; }
 
-Main .img-fluid {
-  max-width: 100%;
-  height: auto; }
-
-Main .img-fluid:hover {
-  transform: scale(2) translate(200px);
-  transition: all 2s; }
-
 Main .intro {
   margin: 50px;
   font-size: 32px; }
 
-Main .cordenadas {
+@media screen and (max-width: 600px) {
+  Main .intro {
+    font-size: 8px;
+    margin: 0%; } }
+
+.cordenadas {
   background-color: #f1e9e9;
   font-size: 16px; }
 
-Main .mapa {
+.mapa {
   padding: 5% 0%; }
 
 .albun-titulo {
@@ -102,6 +100,13 @@ Main .mapa {
   transform: scale(1.5) translate(0px);
   transition: all 2s; }
 
+@media screen and (max-width: 600px) {
+  .galeria {
+    display: flex;
+    flex-direction: column; }
+  H2 {
+    font-size: 8px; } }
+
 .li-servicios {
   margin: 2% 5%;
   font-size: 32px;
@@ -112,12 +117,28 @@ Main .mapa {
   font-size: 24px; }
 
 .video {
-  padding-top: 5%; }
+  padding-top: 5%;
+  width: 100%;
+  height: 100%; }
 
 .iconos-contactos {
   display: flex;
   justify-content: space-between;
   width: 25%; }
+
+.contactos-medios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 4px solid gray;
+  margin: 2%; }
+
+.referencia-numeros {
+  background-color: black;
+  color: white;
+  font-size: 32px;
+  align-items: center;
+  padding: 3% 10%; }
 
 .referencia-instagram {
   background-color: #FF69B4;
@@ -151,18 +172,22 @@ Main .mapa {
   .contactos-medios {
     display: flex;
     flex-direction: column; }
-  .refreferencia-numeros {
-    font-size: 16px; } }
+  .referencia-numeros {
+    font-size: 16px; }
+  .referencia-instagram {
+    font-size: 8px; }
+  .referencia-facebook {
+    font-size: 8px; } }
 
 .cabezera, .logo-principal, .li-servicios, .p-servicios {
   display: flex;
   justify-items: center; }
 
-.titulo, Main .mapa, .columna-central, .video, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+.titulo, .mapa, .columna-central, .video, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
   display: flex;
   justify-content: center; }
 
-Main .cordenadas {
+.cordenadas {
   display: flex;
   align-items: center; }
 
@@ -199,14 +224,22 @@ footer .contacto-derecha:hover {
   border: 4px solid gray;
   margin: 2%; }
 
+@media screen and (max-width: 600px) {
+  .numeros {
+    font-size: 8px; }
+  .contacto-instagram {
+    font-size: 8px; }
+  .contacto-facebook {
+    font-size: 8px; } }
+
 .cabezera, .logo-principal, .li-servicios, .p-servicios {
   display: flex;
   justify-items: center; }
 
-.titulo, Main .mapa, .columna-central, .video, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+.titulo, .mapa, .columna-central, .video, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
   display: flex;
   justify-content: center; }
 
-Main .cordenadas {
+.cordenadas {
   display: flex;
   align-items: center; }

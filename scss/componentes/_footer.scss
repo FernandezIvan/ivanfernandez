@@ -46,3 +46,16 @@ footer{
     border: 4px solid gray;
     margin: 2%;
  }
+
+ @media screen and (max-width:600px){
+    .numeros{
+        font-size:nth($fuentes,1);
+    }
+    .contacto-instagram{
+        font-size:nth($fuentes,1);
+    }
+    .contacto-facebook{
+        font-size:nth($fuentes,1);
+    }
+
+}

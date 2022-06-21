@@ -14,6 +14,8 @@
      flex-wrap: wrap; 
      font-size:nth($fuentes,3) +16px;
     }
+
+
     .logo-principal{
         @extend %centrado-item;
     }
@@ -47,13 +49,14 @@
         .cabezera{
             display: flex;
             flex-direction: column;
-            font-size: nth($fuentes,1)-4px;
-    
         }
         .logo-principal{
             display: flex;
-            flex-direction: column;
-           
+            flex-direction: column; 
+        }
+
+        H1{
+            font-size:nth($fuentes,1);
         }
         
 }

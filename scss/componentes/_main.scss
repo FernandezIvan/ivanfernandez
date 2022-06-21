@@ -9,19 +9,22 @@ Main{
         display: flex;
        margin-left: 25%;
     }
-    .img-fluid{
-         max-width: 100%;
-        height: auto;
-    }
-    
-    .img-fluid:hover{
-        @include aumento((2),(200px), all 2s);
-    }
-    
+   
     
     .intro{
         margin: 50px ;
         font-size:nth($fuentes,3);
+    }
+
+    @media screen and (max-width:600px){
+        .intro{
+            font-size:nth($fuentes,1);
+            margin: 0%;
+        }
+        
+        }
+    
+        
     }
 
     
@@ -35,7 +38,7 @@ Main{
         @extend%centrado-con;
         padding: 5% 0%;
     }
-}
+
 
 .albun-titulo{
     font-size:nth($fuentes, 3)+16px;
@@ -61,6 +64,16 @@ Main{
     @include aumento((1.5),(0px), all 2s);
 }
 
+@media screen and (max-width:600px){
+    .galeria{
+       display: flex;
+       flex-direction: column;
+    }
+   H2{
+    font-size: nth($fuentes,1)
+   }
+}
+
 .li-servicios{
     @extend%centrado-item;
     margin: 2% 5%;
@@ -78,12 +91,36 @@ Main{
     .video{ 
       @extend%centrado-con;
       padding-top: 5%;
+      width:100%;
+      height:100%;
+      
     }
 
     .iconos-contactos{
         display: flex;
         justify-content: space-between;
         width: 25%;
+    }
+    
+
+    .contactos-medios{
+        display: flex;
+       justify-content: space-around;
+        align-items: center;
+        border: 4px solid gray;
+        margin: 2%;   
+
+    }
+
+
+
+    .referencia-numeros{
+        @extend%centrado-con; 
+        background-color:nth($colores,5);
+        color: nth($colores, 6);
+        font-size: nth($fuentes,3);
+        align-items: center;
+        padding: 3% 10%;
     }
 
 
@@ -97,8 +134,8 @@ Main{
     }
 
     .referencia-facebook{
-        @extend%centrado-con; ;
-        background-color: nth($colores, 3);;
+        @extend%centrado-con; 
+        background-color: nth($colores, 3);
         color: nth($colores, 7);
         font-size: nth($fuentes,3);
         align-items: center;
@@ -137,7 +174,13 @@ Main{
         display: flex;
         flex-direction: column;
     }
-    .refreferencia-numeros{
+    .referencia-numeros{
         font-size: nth($fuentes,2);
+    }
+    .referencia-instagram{
+        font-size:nth($fuentes,1);
+    }
+    .referencia-facebook{
+        font-size:nth($fuentes,1);
     }
     }
