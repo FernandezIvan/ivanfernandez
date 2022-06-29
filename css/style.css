@@ -2,7 +2,7 @@
   display: flex;
   justify-items: center; }
 
-.titulo, .mapa, .columna-central, .video, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+.titulo, .mapa, .columna-central, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
   display: flex;
   justify-content: center; }
 
@@ -18,7 +18,7 @@
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 48px; }
+  font-size: 64px; }
 
 .titulo-index:hover {
   animation: titulo-index 6s; }
@@ -48,13 +48,16 @@
     display: flex;
     flex-direction: column; }
   H1 {
-    font-size: 8px; } }
+    font-size: 32px; }
+  .logo-principal {
+    width: 50%;
+    margin-left: 25%; } }
 
 .cabezera, .logo-principal, .li-servicios, .p-servicios {
   display: flex;
   justify-items: center; }
 
-.titulo, .mapa, .columna-central, .video, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+.titulo, .mapa, .columna-central, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
   display: flex;
   justify-content: center; }
 
@@ -62,9 +65,11 @@
   display: flex;
   align-items: center; }
 
-Main .carouseles {
+Main .ubicacion {
   display: flex;
-  margin-left: 25%; }
+  justify-content: center;
+  width: auto;
+  height: auto; }
 
 Main .intro {
   margin: 50px;
@@ -105,7 +110,7 @@ Main .intro {
     display: flex;
     flex-direction: column; }
   H2 {
-    font-size: 8px; } }
+    font-size: 14px; } }
 
 .li-servicios {
   margin: 2% 5%;
@@ -117,9 +122,9 @@ Main .intro {
   font-size: 24px; }
 
 .video {
-  padding-top: 5%;
-  width: 100%;
-  height: 100%; }
+  display: flex;
+  justify-content: center;
+  margin: 10px; }
 
 .iconos-contactos {
   display: flex;
@@ -173,17 +178,17 @@ Main .intro {
     display: flex;
     flex-direction: column; }
   .referencia-numeros {
-    font-size: 16px; }
+    font-size: 14px; }
   .referencia-instagram {
-    font-size: 8px; }
+    font-size: 14px; }
   .referencia-facebook {
-    font-size: 8px; } }
+    font-size: 14px; } }
 
 .cabezera, .logo-principal, .li-servicios, .p-servicios {
   display: flex;
   justify-items: center; }
 
-.titulo, .mapa, .columna-central, .video, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+.titulo, .mapa, .columna-central, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
   display: flex;
   justify-content: center; }
 
@@ -226,17 +231,26 @@ footer .contacto-derecha:hover {
 
 @media screen and (max-width: 600px) {
   .numeros {
-    font-size: 8px; }
+    font-size: 14px;
+    text-align: center; }
   .contacto-instagram {
-    font-size: 8px; }
+    font-size: 12px;
+    text-align: center; }
   .contacto-facebook {
-    font-size: 8px; } }
+    font-size: 12px;
+    text-align: center; }
+  .contacto-izquierda:hover {
+    transform: scale(2) translate(0px);
+    transition: all 4s; }
+  .contacto-derecha:hover {
+    transform: scale(2) translate(0px);
+    transition: all 2s; } }
 
 .cabezera, .logo-principal, .li-servicios, .p-servicios {
   display: flex;
   justify-items: center; }
 
-.titulo, .mapa, .columna-central, .video, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+.titulo, .mapa, .columna-central, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
   display: flex;
   justify-content: center; }
 

@@ -12,7 +12,7 @@
      width: 100%;
      align-items: center;
      flex-wrap: wrap; 
-     font-size:nth($fuentes,3) +16px;
+     font-size:nth($fuentes,4);
     }
 
 
@@ -56,8 +56,13 @@
         }
 
         H1{
-            font-size:nth($fuentes,1);
+            font-size:nth($fuentes,3);
         }
         
+        .logo-principal{
+            width: 50%;
+            margin-left: 25%;
+          
+        }
 }
 
