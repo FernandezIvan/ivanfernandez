@@ -1,0 +1,259 @@
+.cabezera, .logo-principal, .li-servicios, .p-servicios {
+  display: flex;
+  justify-items: center; }
+
+.titulo, .mapa, .columna-central, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+  display: flex;
+  justify-content: center; }
+
+.cordenadas {
+  display: flex;
+  align-items: center; }
+
+.cabezera {
+  background-color: #258d19;
+  color: #0066FF; }
+
+.titulo {
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 64px; }
+
+.titulo-index:hover {
+  animation: titulo-index 6s; }
+
+@keyframes titulo-index {
+  0% {
+    transform: rotate(0deg);
+    transition: 2s; }
+  25% {
+    transform: rotate(90deg);
+    transition: 2s; }
+  50% {
+    transform: rotate(180deg);
+    transition: 2s; }
+  75% {
+    transform: rotate(360deg);
+    transition: 2s; }
+  100% {
+    transform: rotate(0deg);
+    transition: 2s; } }
+
+@media (max-width: 600px) {
+  .cabezera {
+    display: flex;
+    flex-direction: column; }
+  .logo-principal {
+    display: flex;
+    flex-direction: column; }
+  H1 {
+    font-size: 32px; }
+  .logo-principal {
+    width: 50%;
+    margin-left: 25%; } }
+
+.cabezera, .logo-principal, .li-servicios, .p-servicios {
+  display: flex;
+  justify-items: center; }
+
+.titulo, .mapa, .columna-central, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+  display: flex;
+  justify-content: center; }
+
+.cordenadas {
+  display: flex;
+  align-items: center; }
+
+Main .ubicacion {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto; }
+
+Main .intro {
+  margin: 50px;
+  font-size: 32px; }
+
+@media screen and (max-width: 600px) {
+  Main .intro {
+    font-size: 8px;
+    margin: 0%; } }
+
+.cordenadas {
+  background-color: #f1e9e9;
+  font-size: 16px; }
+
+.mapa {
+  padding: 5% 0%; }
+
+.albun-titulo {
+  font-size: 48px;
+  background-color: red;
+  color: black;
+  text-align: center; }
+
+.columna-izquierda:hover {
+  transform: scale(1.5) translate(250px);
+  transition: all 2s; }
+
+.columna-derecha:hover {
+  transform: scale(1.5) translate(-250px);
+  transition: all 2s; }
+
+.columna-central:hover {
+  transform: scale(1.5) translate(0px);
+  transition: all 2s; }
+
+@media screen and (max-width: 600px) {
+  .galeria {
+    display: flex;
+    flex-direction: column; }
+  H2 {
+    font-size: 14px; } }
+
+.li-servicios {
+  margin: 2% 5%;
+  font-size: 32px;
+  text-decoration: underline; }
+
+.p-servicios {
+  margin: 2% 10%;
+  font-size: 24px; }
+
+.video {
+  display: flex;
+  justify-content: center;
+  margin: 10px; }
+
+.iconos-contactos {
+  display: flex;
+  justify-content: space-between;
+  width: 25%; }
+
+.contactos-medios {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 4px solid gray;
+  margin: 2%; }
+
+.referencia-numeros {
+  background-color: black;
+  color: white;
+  font-size: 32px;
+  align-items: center;
+  padding: 3% 10%; }
+
+.referencia-instagram {
+  background-color: #FF69B4;
+  color: #f1e9e9;
+  font-size: 32px;
+  align-items: center;
+  padding: 0% 5%; }
+
+.referencia-facebook {
+  background-color: #0066FF;
+  color: #f1e9e9;
+  font-size: 32px;
+  align-items: center;
+  padding: 0% 5%; }
+
+.referencia-instagram:hover {
+  animation: botones 2s; }
+
+.referencia-facebook:hover {
+  animation: botones 2s; }
+
+@keyframes botones {
+  25% {
+    border-radius: 25%; }
+  50% {
+    border-radius: 50%; }
+  75% {
+    border-radius: 75%; } }
+
+@media (max-width: 600px) {
+  .contactos-medios {
+    display: flex;
+    flex-direction: column; }
+  .referencia-numeros {
+    font-size: 14px; }
+  .referencia-instagram {
+    font-size: 14px; }
+  .referencia-facebook {
+    font-size: 14px; } }
+
+.cabezera, .logo-principal, .li-servicios, .p-servicios {
+  display: flex;
+  justify-items: center; }
+
+.titulo, .mapa, .columna-central, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+  display: flex;
+  justify-content: center; }
+
+.cordenadas {
+  display: flex;
+  align-items: center; }
+
+footer .container-redes {
+  border: 2px solid red; }
+
+footer .contacto-centro:hover {
+  transform: scale(2) translate(0px);
+  transition: all 4s; }
+
+footer .contacto-izquierda:hover {
+  transform: scale(2) translate(200px);
+  transition: all 4s; }
+
+footer .contacto-derecha:hover {
+  transform: scale(2) translate(-200px);
+  transition: all 2s; }
+
+.numeros {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 32px; }
+
+.contacto-instagram {
+  background-color: #FF69B4;
+  font-size: 16px; }
+
+.contacto-facebook {
+  background-color: #0066FF;
+  font-size: 16px; }
+
+.footer-contactos {
+  border: 4px solid gray;
+  margin: 2%; }
+
+@media screen and (max-width: 600px) {
+  .numeros {
+    font-size: 14px;
+    text-align: center; }
+  .contacto-instagram {
+    font-size: 12px;
+    text-align: center; }
+  .contacto-facebook {
+    font-size: 12px;
+    text-align: center; }
+  .contacto-izquierda:hover {
+    transform: scale(2) translate(0px);
+    transition: all 4s; }
+  .contacto-derecha:hover {
+    transform: scale(2) translate(0px);
+    transition: all 2s; } }
+
+.cabezera, .logo-principal, .li-servicios, .p-servicios {
+  display: flex;
+  justify-items: center; }
+
+.titulo, .mapa, .columna-central, .referencia-numeros, .referencia-instagram, .referencia-facebook, .contacto-instagram, .contacto-facebook, .footer-contactos {
+  display: flex;
+  justify-content: center; }
+
+.cordenadas {
+  display: flex;
+  align-items: center; }

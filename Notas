@@ -1,0 +1,16 @@
+Se agrego Seo a todos los archivos de la pagina (Index,Fotos,Servicos,Videosy contactos).
+
+* En los title se agrego el nombre del complejo.
+
+* Se agregaron las etiquetas meta: Description / keyworsd  y los protocolos (og:title) / (og:url).
+
+- Description: hice una pequeña introduccion al lugar que suene llamativa. "El complejo de cabañas los quimbaletes es un lugar idal para descansar, disfrutar de los aterdeceres,reconectarse con la naturaleza. El complejo cuenta con todas las comodidades para disfrutar de un máximo confort."
+
+- keyworsd:Utilice palabras relacionadas al lugar que usalmente buscamos: "Complejos, complejo de cabaña,cabañas,cordoba,quimbaletes,cierras,hospedaje,escapada,naturaleza,villa giardino."
+
+Protocolos:
+- og:title : utilice el mismo que el title.
+
+- og:url: Utilice el sitio de mi pagina con direccionamiento a la pagina de contactos,menos en la pagina de contactos que la redirigi a inicio.
+
+

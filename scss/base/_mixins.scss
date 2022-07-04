@@ -1,0 +1,9 @@
+@mixin aumento($lupa, $direccion, $tiempo) {
+    transform: (scale($lupa)) translate($direccion);
+    transition: $tiempo;
+}
+
+@mixin animacion($rotacion,$tiempo){
+    transform: rotate($rotacion);
+    transition: $tiempo;
+}
